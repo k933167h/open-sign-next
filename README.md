@@ -101,10 +101,10 @@ VS Code 위쪽 메뉴에서 파일 -> 새 파일을 클릭하고 이름을 .env 
 env
 
 # 외부 연동 시 사용할 마스터 키입니다. 본인만의 알아볼 수 없는 긴 영어로 바꿔주세요.
-OPEN_SIGN_API_KEY=my-super-secret-api-key-12345
+OPEN_SIGN_API_KEY=xxx-xxx-xxxx-xxxx-1234
 
 # 웹훅 보안을 위한 암호입니다. 이것도 아무나 알아볼 수 없게 바꿔주세요.
-WEBHOOK_SECRET=webhook-secret-change-me-67890
+WEBHOOK_SECRET=xxx-xxxx-xxxx-xxxx-1234
 
 # 데이터베이스(창고) 설정입니다. (기본값 그대로 두셔도 됩니다)
 S3_ENDPOINT=http://localhost:9000
