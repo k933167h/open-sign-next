@@ -1,10 +1,15 @@
 OpenSign Next
 AGPLv3 licensed, Headless & Self-hosted Document Signing Engine.
 
-Why OpenSign Next?
-Headless First: No bloated UI frameworks. Integrate via simple REST APIs and Webhooks.
-Framework Agnostic Core: @open-sign/core can run independently in any Node.js environment.
-Thin Client: Browser doesn't render PDFs. Server streams page images, preventing memory crashes on large files.
+## 🎯 목적 (Purpose)
+OpenSign-Next는 무거운 클라이언트 렌더링 방식에서 벗어나, 서버 기반의 가벼운(Thin Client) 전자 서명 및 문서 폼 입력 환경을 제공하는 **Headless & Self-hosted 문서 서명 엔진**입니다. 브라우저의 성능 저하를 방지하고, REST API 및 웹훅을 통해 기존 시스템에 쉽게 연동할 수 있도록 설계되었습니다.
+
+## ✨ 주요 기능 (Features)
+- **Thin Client Architecture**: 프론트엔드에서 무거운 PDF 라이브러리(PDF.js 등)를 로드하지 않습니다. 서버(`pdf2pic`)에서 PDF 페이지를 이미지로 변환하여 브라우저로 스트리밍하므로, 대용량 PDF 파일에서도 메모리 크래시 없이 빠르고 쾌적하게 동작합니다.
+- **Headless First**: 복잡하고 무거운 UI 프레임워크에 종속되지 않습니다. 모든 전자 서명 및 폼 제출은 단순한 REST API와 Webhook을 통해 백엔드에서 제어하고 통합할 수 있습니다.
+- **동적 폼 필드 관리 (Dynamic Field Management)**: 직관적인 관리자 UI를 통해 텍스트(TEXT), 날짜(DATE), 체크박스(CHECKBOX), 서명(SIGNATURE) 등의 입력 필드를 추가, 수정, 삭제 및 문서 내 배치(X, Y 좌표 지정)를 손쉽게 할 수 있습니다.
+- **Framework Agnostic Core**: 핵심 로직인 `@open-sign/core` 모듈은 특정 프레임워크에 얽매이지 않고 어떠한 Node.js 환경에서도 독립적으로 실행될 수 있습니다.
+- **Turborepo 기반 모노레포**: 프론트엔드(React/Vite), 백엔드(NestJS), 코어 패키지 등 다중 프로젝트를 효율적으로 관리하고 빌드할 수 있는 모노레포 구조를 채택했습니다.
 
 Quick Start (Local Dev)
 # 1. Clone & Install
